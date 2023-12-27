@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(243, 243, 243);
+}
+
+.product_img{
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    position: relative;
+}
+
+.image{
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 5%;
+    margin-top: 10px;
+}
+
+.overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+    overflow: hidden;
+    height: 0;
+    width: 100%;
+    transition: .5s ease;
+    color: white;
+}
+
+.overlay>button{
+    width: 120px;
+}
+
+.product_img:hover .overlay{
+    height: 100%;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+/* Services Section Start Here  */
+
+.services_section{
+    background-color: #328A8F;
+    color: white;
+    border-radius: 15px;
+    height: auto;
+}
+.services_section1{
+    background-color: #328A8F;
+    color: white;
+    border-radius: 15px;
+    height: auto;
+}
+
+.services_section>ul{
+    padding-top: 15px;
+}
+
+.services_section>ul>li{
+    font-size: 24px;
+    line-height: 65px;
+}
+
+/* NewsLetter Section Start Here  */
+
+.newsletter_bg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    /* background-color: red; */
+    /* background-image: url(./images/newsletter_bg.jpg); */
+    background-image: url(../images/newsletter_bg.jpg);
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.newsletter_bg>form>input{
+    width: 250px;
+    padding-left: 15px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.newsletter_bg>form>button{
+    height: 40px;
+    border: none;
+    width: 100px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+}
+
+
+footer{
+    background-color: black;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    color: white;
+}
+
+.footer_menu>li>a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer_kids>li>a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer_social_links>li>a{
+    text-decoration: none;
+    color: white;
+}
